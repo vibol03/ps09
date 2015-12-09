@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2015, 9:05:20 PM
+    Author     : vibol
+*/
+
+tr td {
+    padding-right: 10px;
+}
+
+[id^=droppable] { width: 65px; height: 65px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+[id^=draggable] { width: 55px; height: 55px; padding: 0.5em; float: left; margin: 10px; }
+
+.red{
+    color: red;
+}
+
+.green{
+    color: lime;
+}
+
+.piece{    
+    /* Set the background image to wood grain, or color if picture isn't loaded */
+	background-color: #debd92;
+	background-image: url(../tiles/piece.jpg);
+	background-size: cover;		/* Set background image to cover entire div */
+	
+	/* color of text */
+	color: #000000;	
+}
+.center{
+    position: absolute;
+    margin:auto;
+    width: 100%;
+}
+
+.tripleTile{
+    background-image: url(../tiles/triple.PNG);
+    background-size: 100%;
+}
+
+.doubleTile{
+    background-image: url(../tiles/double.PNG);
+    background-size: 100%;
+}
+
+.normalTile{
+    background-image: url(../tiles/gray.PNG);
+    background-size: 100%;
+}
+

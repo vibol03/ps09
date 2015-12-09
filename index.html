@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Scrabble</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="scripts/SettingDroppable.js"></script>
+        <script src="scripts/TileArray.js"></script>
+        <link rel="stylesheet" href="css/style.css">        
+
+    </head>
+    <body>
+        <div id="mainContainer" class="center">
+            <table>
+                <tr>
+                    <td>
+                        <div id="containerDroppable" align="center">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="containerGameInfo"  align="center" >
+                            <div>Word: <label id="word"></label></div>
+                            <div>Score: <label id="score"></label></div>
+                            <div>Tiles remaining: <label id="tileTotal"></label></div>
+                            <div id="result"></div>
+                            <input type="button" id="btnSubmit" value="Submit" onclick="submitAndUpdate()">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="containerDraggable"  align="center" >            
+                            <div id="draggable" class="ui-widget-content"  align="center" >
+                                <p>Drag me</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="containerButton">
+                            <input type="button" id="btnNewHand" value="New Hand" onclick="SetUp()">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="infoTable">
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
