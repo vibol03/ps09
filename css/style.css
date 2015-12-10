@@ -12,17 +12,12 @@ tr td {
     padding-right: 10px;
 }
 
+//setting all the droppable and draggable
 [id^=droppable] { width: 65px; height: 65px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
 [id^=draggable] { width: 55px; height: 55px; padding: 0.5em; float: left; margin: 10px; }
 
-.red{
-    color: red;
-}
 
-.green{
-    color: lime;
-}
-
+// I took this code from Ramon, and modified it a little bit
 .piece{    
     /* Set the background image to wood grain, or color if picture isn't loaded */
 	background-color: #debd92;
@@ -32,22 +27,25 @@ tr td {
 	/* color of text */
 	color: #000000;	
 }
+
+// position the information container in the center
 .center{
     position: absolute;
     margin:auto;
     width: 100%;
 }
 
+//set the image of the triple tiles to their appropriate images
 .tripleTile{
     background-image: url(../tiles/triple.PNG);
     background-size: 100%;
 }
-
+//same logic as above
 .doubleTile{
     background-image: url(../tiles/double.PNG);
     background-size: 100%;
 }
-
+//same logic as above
 .normalTile{
     background-image: url(../tiles/gray.PNG);
     background-size: 100%;
