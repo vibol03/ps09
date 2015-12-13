@@ -234,7 +234,8 @@ function submitAndUpdate(){
 // Do a jQuery Ajax request for the text dictionary
 $.get( "tiles/dictionary.txt", function( txt ) {
     // Get an array of all the words
-    var words = txt.split( "\n" );
+    var words = txt.split( "\r\n" );
+//        var words = txt.split("\n");
 //    var count = 0;
     // And add them as properties to the dictionary lookup
     // This will allow for fast lookups later
